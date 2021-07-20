@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+body {
+   min-height: 100vh;
+   line-height: 1.5;
+   display: flex;
+   flex-direction: column;
+}
+
+a {
+   text-decoration: none;
+}
+
+img {
+   max-width: 100%;
+   display: block;
+}
+
+input,
+button,
+textarea,
+select {
+   font: inherit;
+}
+.wrapper {
+   padding: 10px 10px;
+   flex: 1 0 auto;
+   width: 100%;
+   display: flex;
+}
+.allAchive,
+.singlAchive {
+   width: 40%;
+   padding: 0 20px;
+   display: flex;
+   flex-direction: column;
+   .header_achive {
+      padding: 10px 10px;
+      display: flex;
+      align-items: center;
+      h4 {
+         margin: 0 20px 0 0;
+      }
+   }
+   .listAchive {
+      flex: 1 0 auto;
+      .item {
+         height: auto;
+         min-height: 120px;
+         padding: 5px 15px;
+         margin: 15px 0;
+         border-radius: 3px;
+         h5 {
+            margin: 0;
+            float: left;
+         }
+         .count {
+            margin: 0;
+            float: right;
+         }
+         .description {
+            margin: 10px;
+         }
+         header {
+            height: 20px;
+         }
+         .coin {
+            margin: 0;
+            text-align: right;
+            color: rgb(255, 196, 0);
+         }
+      }
+   }
+}
+.buttonComplete {
+   width: 20%;
+   padding: 5px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   p {
+      font-size: 20px;
+      text-align: center;
+   }
+}
+.head {
+   div {
+      margin: 0;
+   }
+   h4 {
+      margin: 20px 0 10px 0;
+   }
+}
+.user_data {
+   p {
+      margin: 0;
+   }
+}

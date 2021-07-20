@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.wrapper {
+  padding: 10px 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.allAchive,
+.singlAchive {
+  width: 40%;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.allAchive .header_achive,
+.singlAchive .header_achive {
+  padding: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.allAchive .header_achive h4,
+.singlAchive .header_achive h4 {
+  margin: 0 20px 0 0;
+}
+
+.allAchive .listAchive,
+.singlAchive .listAchive {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.allAchive .listAchive .item,
+.singlAchive .listAchive .item {
+  height: auto;
+  min-height: 120px;
+  padding: 5px 15px;
+  margin: 15px 0;
+  border-radius: 3px;
+}
+
+.allAchive .listAchive .item h5,
+.singlAchive .listAchive .item h5 {
+  margin: 0;
+  float: left;
+}
+
+.allAchive .listAchive .item .count,
+.singlAchive .listAchive .item .count {
+  margin: 0;
+  float: right;
+}
+
+.allAchive .listAchive .item .description,
+.singlAchive .listAchive .item .description {
+  margin: 10px;
+}
+
+.allAchive .listAchive .item header,
+.singlAchive .listAchive .item header {
+  height: 20px;
+}
+
+.allAchive .listAchive .item .coin,
+.singlAchive .listAchive .item .coin {
+  margin: 0;
+  text-align: right;
+  color: #ffc400;
+}
+
+.buttonComplete {
+  width: 20%;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.buttonComplete p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.head div {
+  margin: 0;
+}
+
+.head h4 {
+  margin: 20px 0 10px 0;
+}
+
+.user_data p {
+  margin: 0;
+}

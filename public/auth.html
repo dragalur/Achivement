@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Compiled and minified CSS -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      />
+      <link rel="stylesheet" href="./css/auth.css" />
+      <title>Welcome!</title>
+   </head>
+   <body>
+      <div class="wrapper">
+         <h2 class="game">Farm Game</h2>
+         <div class="auth">
+            <div class="register z-depth-2">
+               <h5>Sing Up</h5>
+               <div class="input-field col s6">
+                  <input id="Email_lb" type="text" name="email" class="validate" />
+                  <label for="Email_lb">Email</label>
+               </div>
+               <div class="input-field col s6">
+                  <input id="name_lb" type="text" name="name" class="validate" />
+                  <label for="name_lb">Name</label>
+               </div>
+               <div class="input-field col s6">
+                  <input id="passwrod_lb" type="password" name="password" class="validate" />
+                  <label for="passwrod_lb">Password</label>
+               </div>
+               <button class="btn waves-effect waves-light" onclick="register()" name="action">
+                  Submit
+                  <i class="material-icons right">send</i>
+               </button>
+            </div>
+            <div class="login z-depth-2">
+               <h5>Sing In</h5>
+               <div class="input-field col s6">
+                  <input id="lEmail_lb" type="text" name="email" class="validate" />
+                  <label for="lEmail_lb">Email</label>
+               </div>
+               <div class="input-field col s6">
+                  <input id="lpasswrod_lb" type="text" name="password" class="validate" />
+                  <label for="lpasswrod_lb">Password</label>
+               </div>
+               <button class="btn waves-effect waves-light" onclick="login()" name="action">
+                  Submit
+                  <i class="material-icons right">send</i>
+               </button>
+            </div>
+         </div>
+         <h5 id="message"></h5>
+      </div>
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="./js/auth.js"></script>
+   </body>
+</html>

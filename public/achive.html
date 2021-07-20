@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Compiled and minified CSS -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      />
+      <link rel="stylesheet" href="./css/card.css" />
+      <title>Document</title>
+   </head>
+   <body>
+      <nav>
+         <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Layout Achive</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+               <li><a href="user.html">User Achive</a></li>
+               <li class="active"><a href="achive.html">Layout Achive</a></li>
+            </ul>
+         </div>
+      </nav>
+
+      <div class="wrapper">
+         <div class="allAchive z-depth-3">
+            <header class="header_achive">
+               <h4>All achives</h4>
+               <a id="allAchive" class="waves-effect waves-light btn-small">Show</a>
+            </header>
+            <div class="listAchive"></div>
+         </div>
+         <div class="buttonComplete"></div>
+         <div class="singlAchive z-depth-3">
+            <div class="head" class="header_achive">
+               <h4>Singl achive</h4>
+               <div class="input-field col s6">
+                  <input id="fieldOneAchive" type="text" class="validate" />
+                  <label for="fieldOneAchive">Name of Achive</label>
+               </div>
+               <a id="oneAchive" class="waves-effect waves-light btn-small">Show</a>
+            </div>
+            <div class="listAchive"></div>
+         </div>
+      </div>
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="./js/achive.js"></script>
+   </body>
+</html>

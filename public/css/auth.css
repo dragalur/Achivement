@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.game {
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+  margin: 0;
+}
+
+.auth {
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.auth .register, .auth .login {
+  width: 300px;
+  height: 300px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.auth .register div, .auth .login div {
+  margin: 10px 0;
+}
