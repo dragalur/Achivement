@@ -16,9 +16,6 @@ mongoose
       useUnifiedTopology: true,
       useCreateIndex: true
    })
-   .then(() => {
-      console.log('connect to DB');
-   })
    .catch(e => {
       console.log('monggose', e);
    });
