@@ -3,6 +3,10 @@ import path from 'path';
 
 export async function register(req, res) {
    const { name, email, password } = req.body;
+   const userCheck = User.findOne(email);
+   if (!userCheck) {
+      res.status(405).json({ message: 'Email is exist.' });
+   }
    const user = new User({ name, email, password });
    try {
       await user.save((err, result) => {

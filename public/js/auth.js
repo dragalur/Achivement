@@ -2,8 +2,13 @@ async function register() {
    const email = document.getElementById('Email_lb').value;
    const name = document.getElementById('name_lb').value;
    const password = document.getElementById('passwrod_lb').value;
-   await fetch();
-   console.log(email, name, password);
+   await fetch('/register', {
+      method: 'POST',
+      body: JSON.stringify({ email, password, name }),
+      headers: { 'Content-Type': 'application/json' }
+   })
+      .then(res => res.json())
+      .then(i => setMessage(i.message));
 }
 async function login() {
    const email = document.getElementById('lEmail_lb').value;
